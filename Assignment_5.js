@@ -122,3 +122,18 @@ tableRef.addEventListener("mouseover", function (e) {
         e.target.style.backgroundColor = colorNum
     }
 })
+
+//Fills empty white cells with the chosen color
+fillEmpty.addEventListener("click", function (e) {
+    for (let i = 0, rowTemp; rowTemp = table.rows[i]; i++) {
+      for (let j = 0, columnTemp; columnTemp = rowTemp.cells[j]; j++) {
+        let temp = table.rows[i].cells[j].style.backgroundColor
+        console.log(temp)
+        if (temp == "white") {
+          console.log("if")
+          table.rows[i].cells[j].style.backgroundColor = colorNum
+          console.log()
+        }
+      }
+    }
+  })
