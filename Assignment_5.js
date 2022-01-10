@@ -85,12 +85,3 @@ delRowBtn.addEventListener("click", function () {
       col--
     }
   })
-
-//Resets all cells back to white
-resetBtn.addEventListener("click", function (e) {
-  for (let i = 0, rowTemp; rowTemp = table.rows[i]; i++) {
-    for (let j = 0, columnTemp; columnTemp = rowTemp.cells[j]; j++) {
-      table.rows[i].cells[j].style.backgroundColor = "white"
-    }
-  }
-})
