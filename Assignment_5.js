@@ -62,3 +62,26 @@ fillBtn.addEventListener("click", function (e) {
     }
   }
 })
+
+//Deletes rows from the table
+delRowBtn.addEventListener("click", function () {
+    let newRow = tableRef.rows[row]
+    tableRef.deleteRow(0)
+    if (row > -1) {
+      row--
+    }
+    if (row == -1){
+      col = 1
+    }
+  })
+  
+  ///Deletes columns from the table
+  delColBtn.addEventListener("click", function () {
+    for (let i = 0; i < tableRef.rows.length; i++) {
+      let newRow = tableRef.rows[i];
+      newCell = newRow.deleteCell(-1);
+    }
+    if (col > 1) {
+      col--
+    }
+  })
