@@ -108,3 +108,17 @@ tableRef.addEventListener("mousedown", function (e) {
     e.target.style.backgroundColor = colorNum
     console.log(down)
 })
+//check if mouse down is true
+document.addEventListener("mousedown", function () {
+    down = true
+})
+//check if mouse down is false
+document.addEventListener("mouseup", function () {
+    down = false
+})
+//mousedown and mouse over to change color
+tableRef.addEventListener("mouseover", function (e) {
+    if (down) {
+        e.target.style.backgroundColor = colorNum
+    }
+})
