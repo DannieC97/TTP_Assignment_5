@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    
+}
+
+:root {
+    --grid-cols: auto;
+    --grid-rows: auto;
+}
+
+#all-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btns{
+    margin: 4px
+}
+
+#container {
+    display: table;
+    grid-gap: 1em;
+    border: 5px solid black;
+    margin: auto;
+    width: 100vmin;
+    height: 80vmin;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow-x: auto;
+    background-color: gray;
+}
+
+.grid-item {
+    width: 20px; 
+    height: 30px;
+    margin: 0px;
+    border: 1px solid black;
+    background-color: white;
+    overflow-x: auto; 
+}
+
+#con {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+div{
+    display: inline-block;
+}
+
