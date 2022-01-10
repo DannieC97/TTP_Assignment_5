@@ -53,3 +53,12 @@ addColBtn.addEventListener("click", function () {
   }
 })
 
+//Function to fill all cells with a color
+fillBtn.addEventListener("click", function (e) {
+  console.log("fill")
+  for (let i = 0, rowTemp; rowTemp = table.rows[i]; i++) {
+    for (let j = 0, columnTemp; columnTemp = rowTemp.cells[j]; j++) {
+      table.rows[i].cells[j].style.backgroundColor = colorNum
+    }
+  }
+})
